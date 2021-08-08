@@ -1,0 +1,16 @@
+<div class="calc-result">
+  <p-table [value]="(calcResult | async)?.calcResults">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Input</th>
+        <th>Result</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-calcResult>
+      <tr>
+        <td>{{calcResult.input}}</td>
+        <td>{{calcResult.result}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>

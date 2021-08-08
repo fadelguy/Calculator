@@ -1,0 +1,14 @@
+.calc-page {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+
+  .calculator {
+      max-height: 400px;
+    width: 400px;
+    background: #cccccc8a;
+    padding: 20px;
+  }
+
+
+}
