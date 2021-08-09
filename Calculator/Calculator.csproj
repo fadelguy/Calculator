@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -25,24 +25,10 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\app.routes.ts" />
-    <None Remove="ClientApp\src\app\interface\calc-response.interface.ts" />
-    <None Remove="ClientApp\src\app\interface\calc-result.interface.ts" />
-    <None Remove="ClientApp\src\app\store\actions\calc-result.action.ts" />
-    <None Remove="ClientApp\src\app\store\resucers\calc-result.reducer.ts" />
-    <None Remove="ClientApp\src\app\store\state\calc-result.state.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\app.routes.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\interface\calc-response.interface.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\interface\calc-result.interface.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\store\actions\calc-result.action.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\store\resucers\calc-result.reducer.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\store\state\calc-result.state.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ClientApp\src\app\services\" />
   </ItemGroup>
 
   <ItemGroup>

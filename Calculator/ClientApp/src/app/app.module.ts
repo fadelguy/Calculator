@@ -1,18 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { TableModule } from 'primeng-lts/table';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './components/home/home.component';
-import { CalcComponent } from './components/calc/calc.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { StoreModule } from '@ngrx/store';
-import { calcResultReducer } from './store/resucers/calc-result.reducer';
-import { ResultsComponent } from './components/results/results.component';
 import { appRoutes } from './app.routes';
 
 @NgModule({
@@ -20,17 +14,13 @@ import { appRoutes } from './app.routes';
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CalcComponent,
-    ResultsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     BrowserAnimationsModule,
-    HttpClientModule,
-    FormsModule,
-    TableModule,
-    StoreModule.forRoot({ calcResults: calcResultReducer }),
     RouterModule.forRoot(appRoutes),
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
