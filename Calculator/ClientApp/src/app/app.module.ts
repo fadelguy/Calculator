@@ -8,7 +8,6 @@ import { TableModule } from 'primeng-lts/table';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './components/home/home.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { CalcComponent } from './components/calc/calc.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StoreModule } from '@ngrx/store';
@@ -21,7 +20,6 @@ import { appRoutes } from './app.routes';
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    FetchDataComponent,
     CalcComponent,
     ResultsComponent
   ],
